@@ -37,13 +37,25 @@ status_cidades = df_dados.loc[df_dados.tipo == 'city', : ]
 status_cidades_coordenada = status_cidades.join(coordenadas, on = 'id_ibge')
 
 # Filtrando somente os dados de status e os campos de interesse
-status = status_cidades_coordenada.loc[status_cidades_coordenada.final == True, ['estado', 'cidade', 'confirmado', 'mortes', 'latitude', 'longitude']]
+status = status_cidades_coordenada.loc[
+	
+	status_cidades_coordenada.final == True,
+	 
+	 [
+		'estado',
+		'cidade',
+		'confirmado',
+		'mortes',
+		'latitude',
+		'longitude'
+	]
+]
 
 # Filtra somente os dados para plotar os casos confirmados e remove as ocorrência de dados faltantes
 confirmados = status[['latitude', 'longitude', 'confirmado']]
 confirmados = confirmados.dropna()
 
-# Cria os mapas com localização inicial no Brasil
+# Cria o mapa com localização inicial no Brasil
 brasil = [-15.788497, -47.879873]
 
 mapa = folium.Map(
