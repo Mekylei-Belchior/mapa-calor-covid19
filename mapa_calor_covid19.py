@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 ### VISUALIZAÇÃO DAS OCORRÊNCIAS DA COVID-19 POR CIDADE EM MAPA DE CALOR ###
 #
 #
