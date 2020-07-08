@@ -1,7 +1,7 @@
 # MAPA DE CALOR COVID19  
 Mapa de calor para visualizar a distribuição de casos do COVID19 por municípios.  
 
-Liguagem utilizada: Python 3 (v3.7.3)  
+**Linguagem utilizada: Python 3 (v3.7.3)**  
 
 ### PACOTES UTILIZADOS  
 
